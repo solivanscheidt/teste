@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            background-color: rgba(134, 70, 70, 0.437);
         }
         caption{
             font-size: 1.3em;
@@ -21,12 +22,21 @@
         th, td{
             border: 1px solid black;
         }
+        col.cnome{
+            background-color: aqua;
+        }
     </style>
 </head>
 <body>
     <h1>Exercicio Tabela</h1>
 
     <table>
+        <colgroup>
+            <col class="cnome">                                                 
+            <col class="csexo">
+            <col class="cidade">
+            <col class="cprof">
+        </colgroup>
         <caption>Cadastro</caption>
         <tr>
             <th>nome</th>
@@ -51,6 +61,18 @@
             <td>M</td>
             <td>27</td>
             <td>Motorista</td>
+        </tr>
+        <tr>
+            <td>Caio</td>
+            <td>M</td>
+            <td>45</td>
+            <td>Programador</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>F</td>
+            <td>32</td>
+            <td>Pediatra</td>
         </tr>
     </table>
 </body>
