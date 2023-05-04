@@ -1,1 +1,18 @@
 @charset "UTF-8";
+@media print { /*impressão */
+    * {
+        font-family: 'Courier New', Courier, monospace;
+    } 
+}
+main{
+    border: 2px black;
+}
+main h1{
+    text-shadow: none;
+    color: black;
+}
+img#phone {display: none;}
+img#tablet { display: none;}
+img#print {display: block;}
+img#pc {display: none;}
+img#tv {display: none;}
