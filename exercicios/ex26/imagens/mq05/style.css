@@ -2,8 +2,10 @@
 
 *{
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
 }
-body html {
+body, html {
     background-color: lightgray;
 }
 header {
@@ -13,8 +15,19 @@ header > h1 {
     padding: 10px;
     text-align: center;
 }
-menu {
+span#burger{
+    background-color: rgb(57, 57, 57);
+    color: white;
     display: block;
+    text-align: center;
+    padding: 10px;
+}
+span#burger:hover {
+    background-color: white;
+    color: black;
+}
+menu {
+    display: none;
 }
 menu > ul {
     list-style-type: none;
@@ -26,6 +39,7 @@ menu > ul > li > a {
     text-align: center;
     background-color: rgb(108, 108, 108);
     color: white;
+    border-top: 2px solid black;
 }
 menu > ul > li >a:hover {
     background-color: gray;
@@ -41,6 +55,7 @@ main {
 }
 article > h2 {
     margin-bottom: 20px;
+    text-align: center;
 }
 article > p {
     text-align: justify;
